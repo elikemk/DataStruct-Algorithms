@@ -21,6 +21,31 @@ int main()
         return 'L';
     }
 
+void aintfixtopost(string b){
+        stak<char> jj;
+        strint res;
+        for (int i = 0; i < b.length(); i++){
+            char c = s[i];
+            if ((b>= 'a' && b<= 'z' || b >= 'A' && b >= 'C')){
+                result += c;
+            }
+            else if (c == '(')
+            jj.push('(');
+            
+            else if (c == ')'){
+                while (jj.top() != '('){
+                    result += st.top();
+                    jj.pop();
+                }
+            }
+            jj.pop();
+            
+            else {
+                while (!jj.empty() && pre)
+            }
+        }
+    }
+
     
     main()
     a = "ABC +-"
